@@ -1,0 +1,21 @@
+<div>
+    <h2>Event binding example</h2>
+    <button (click)="buttonClick()"
+    [ngStyle]="styleOb"
+    >Click Me</button>
+    <!-- <button (click)="buttonClick()" (mouseenter)="mouseEnrterd()">Click Me</button> -->
+    <h1>{{counter}}</h1>
+    <button (click)="increaseCounter($event)  ">increase_Counter</button>
+                                <!-- ;buttonClick()  -->
+    <!-- here you may define as many method u required, make it possible by using semiColom -->
+
+    <!-- ******************************************************** -->
+<!-- for get information regarding event ,  -->
+<!-- use event payload  -->
+
+    <!-- ($event) -->
+<br>
+<hr>
+<input #inputField type="text" (keyup)="printInputValue($event,inputField)">
+
+</div>
